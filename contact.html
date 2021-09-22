@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assests/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+        integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vishwamitra</title>
+    <style>
+        svg {
+            opacity: 0.7;
+            transition: all 0.5s ease;
+            height: 100px;
+            width: 100px;
+        }
+
+        svg:hover {
+            opacity: 1;
+            height: 120px;
+            width: 120px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            svg {
+                height: 80px;
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mobile-navigation mobile-drawer" id="MobileNav">
+        <div style="height:100%;width: 100%;position: absolute;">
+            <img src="../assests/close.svg" alt="" class="closeNav" height="30"
+                style="position: absolute; left: 15%;top: 40px;" onclick="closeNav()">
+            <a href="./" class="Merriweather500 display-2 text-white"
+                style="position: absolute; left: 15%; top:30%; font-size:40px;">Home</a>
+            <a href="./about.html" class="Merriweather500 display-2 text-white"
+                style="position: absolute; left: 15%; top:40%; font-size:40px;">About Us</a>
+            <a href="./about.html#section3" onclick="closeNavDelay()" class="Merriweather500 display-2 text-white"
+                style="position: absolute; left: 15%; top:50%; font-size:40px;">Infrastructure</a>
+            <a href="./contact.html" class="Merriweather500 display-2 text-white"
+                style="position: absolute; left: 15%; top:60%; font-size:40px;">Contact Us</a>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between p-4 mx-md-5 fixed-top">
+        <div>
+            <img src="./assests/logo.png" height="40" alt="">
+        </div>
+        <div>
+            <img src="./assests/menu.svg" class="mt-2" onclick="openNavigation()" height="25" alt="">
+        </div>
+    </div>
+
+    <!-- Main Section -->
+
+    <div id="fullpage">
+        <div class="section section31 row m-0 p-0" data-anchor="section1">
+            <h1 class="text-center mt-5 mont800 display-3 textshadow text-white mb-4">
+                Feel Free To Contact Us
+            </h1>
+            <div class="col-10 mx-auto row">
+                <div class="col-12 col-md-4 my-2 text-center">
+                    <a class="text-white" href="tel:+919978059595">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172"
+                            style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <path
+                                    d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                    fill="#ffb400"></path>
+                                <g id="original-icon" fill="#ffffff">
+                                    <path
+                                        d="M119.59566,33.04032c-1.87184,0.10347 -7.74134,0.28219 -16.67728,4.46797c-8.93594,4.17637 -21.20169,12.30338 -37.15469,28.25638c-15.953,15.953 -24.08941,28.22816 -28.26578,37.16409c-4.17638,8.92653 -4.3645,14.79603 -4.46797,16.66787v0.12228c0,2.16344 1.09113,3.64022 2.35156,5.29572c1.26044,1.64609 2.86891,3.32981 4.55262,4.94769c3.37684,3.23575 6.98884,6.13288 8.64434,7.30866c3.80953,2.72781 8.2775,2.08819 10.30925,-0.77131c1.45797,-2.03175 12.51031,-18.82191 14.16581,-21.55913c0,0 -0.00941,0 0,0c1.68372,-2.54909 1.00647,-5.57791 -0.52675,-8.39037c-1.15697,-2.11641 -4.41153,-7.77897 -5.36156,-9.42506c0.82775,-1.26044 4.02587,-5.95416 14.01531,-15.94359l0.00941,-0.00941v-0.00941c10.02706,-10.19638 14.70197,-13.244 15.91538,-14.00591c1.60847,0.92181 7.17697,4.12934 9.36862,5.33334c2.67137,1.59906 5.75663,2.11641 8.32453,0.64903l0.02822,-0.00941l0.01881,-0.01881c1.28866,-0.77131 6.07644,-3.88478 10.9865,-7.11113c2.45503,-1.60847 4.89125,-3.21694 6.82894,-4.49619c1.90947,-1.27925 3.19812,-2.13522 3.83775,-2.61494c2.85009,-2.03175 3.49913,-6.49031 0.77131,-10.30925c-1.16638,-1.62728 -4.05409,-5.30512 -7.29925,-8.71019c-1.61787,-1.70253 -3.311,-3.32041 -4.97591,-4.58084c-1.6555,-1.25103 -3.17931,-2.36097 -5.39919,-2.24809zM119.84022,37.84691c-0.22575,0.00941 0.94062,0.29159 2.24809,1.27925c1.31688,0.99706 2.87831,2.47384 4.39272,4.0635c3.02881,3.17931 5.92594,6.87597 6.86656,8.19284c1.49559,2.08819 0.4515,3.51794 0.35744,3.58378l-0.02822,0.02822l-0.02822,0.00941c-0.20694,0.16931 -1.73075,1.204 -3.65903,2.48325c-1.91887,1.27925 -4.34569,2.88772 -6.80072,4.48678c-4.87244,3.19813 -9.92359,6.4715 -10.77016,6.98884h-0.00941c-0.37625,0.20694 -1.91888,0.31041 -3.4615,-0.61141l-0.03762,-0.02822l-0.04703,-0.01881c-2.20106,-1.204 -10.70431,-6.08584 -10.70431,-6.08584l-1.19459,-0.68666l-1.19459,0.68666c0,0 -6.29278,3.64963 -17.99416,15.55794c0,0 0,0.00941 -0.00941,0.00941c0,0 0,0 0,0.00941c-11.69197,11.68256 -15.52031,17.91891 -15.52031,17.91891l-0.73369,1.21341l0.70547,1.23222c0,0 4.88184,8.50325 6.07644,10.70431c0.99706,1.82481 0.73369,3.43328 0.74309,3.40506l-0.02822,0.04703l-0.02822,0.05644c-0.95944,1.59906 -13.36628,20.42097 -14.01531,21.33337c-0.06584,0.09406 -1.505,1.13816 -3.58378,-0.35744c-1.29806,-0.92181 -4.95709,-3.82834 -8.11759,-6.85716c-1.57084,-1.52381 -3.04763,-3.07584 -4.05409,-4.40212c-0.99706,-1.31688 -1.34509,-2.50206 -1.34509,-2.36097c0.10347,-2.15403 0.15991,-6.56556 3.99766,-14.75841c3.87537,-8.29631 11.65434,-20.14819 27.30634,-35.80019c15.652,-15.652 27.49447,-23.43097 35.79078,-27.30634c8.29631,-3.87537 12.74547,-3.90359 14.88069,-4.01647z">
+                                    </path>
+                                </g>
+                                <path d="" fill="none"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <div class="text-white mt-2">
+                        +91 99780 59595
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-2 text-center">
+                    <a target="_blank" href="https://goo.gl/maps/i71bjXKu4E9147Us7">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172"
+                            style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <path
+                                    d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                    fill="#3498db"></path>
+                                <path
+                                    d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                    fill="none"></path>
+                                <path
+                                    d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z"
+                                    fill="none"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M86,35.26c-18.65174,0 -33.82667,15.17493 -33.82667,33.82667c0,5.59924 1.40187,11.14686 4.06316,16.07097l27.91361,50.49225c0.37163,0.67306 1.07979,1.09012 1.8499,1.09012c0.7701,0 1.47826,-0.41705 1.8499,-1.09012l27.93012,-50.50051c2.65097,-4.90759 4.04665,-10.46347 4.04665,-16.06271c0,-18.65174 -15.17493,-33.82667 -33.82667,-33.82667zM86,39.48833c16.32079,0 29.59833,13.27754 29.59833,29.59833c0,4.89933 -1.22638,9.75944 -3.53462,14.03113l-26.06371,47.13931l-26.05545,-47.12279c-2.31856,-4.29027 -3.54288,-9.14831 -3.54288,-14.04765c0,-16.32079 13.27754,-29.59833 29.59833,-29.59833zM86,52.17333c-9.32587,0 -16.91333,7.58746 -16.91333,16.91333c0,9.32587 7.58746,16.91333 16.91333,16.91333c9.32587,0 16.91333,-7.58747 16.91333,-16.91333c0,-9.32587 -7.58747,-16.91333 -16.91333,-16.91333zM86,56.40167c6.99492,0 12.685,5.69008 12.685,12.685c0,6.99492 -5.69008,12.685 -12.685,12.685c-6.99492,0 -12.685,-5.69008 -12.685,-12.685c0,-6.99492 5.69008,-12.685 12.685,-12.685z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <div class="text-white mt-2">
+                        Ahmedabad
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-2 text-center">
+                    <a target="_blank" href="mailto:bhumikatrivedi911@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172"
+                            style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <path
+                                    d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                    fill="#df2935"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M41.80556,54.18v63.64h88.38889v-63.64zM45.34111,57.71556h81.31778v4.47469l-40.65889,32.15146l-40.65889,-32.15146zM45.34111,66.72017l39.55403,31.26757c0.64911,0.5179 1.56062,0.5179 2.20972,0l39.55403,-31.26757v47.56427h-81.31778z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <div class="text-white mt-2">
+                        bhumikatrivedi911@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+        integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assests/script.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            // navigation:true,
+            anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7',
+                'section8', 'section9', 'section10'
+            ],
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+        });
+    </script>
+</body>
+
+</html>
