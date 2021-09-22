@@ -82,7 +82,7 @@ body {
 /* Nav */
 
 .mobile-drawer {
-    background-color: rgb(173, 113, 0);
+    background-color: orange;
     position: fixed;
     width: 100%;
     height: 100%;
