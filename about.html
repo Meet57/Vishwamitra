@@ -16,9 +16,16 @@
             background-color: rgba(0, 0, 0, 0.4);
         }
 
+        .text-justify{
+            text-align: justify;
+        }
+
         @media only screen and (max-width: 600px) {
-            p{
+            p {
                 font-size: 12px;
+            }
+            h1{
+                font-size: 25px !important;
             }
         }
     </style>
@@ -167,11 +174,11 @@
         <div class="section section14" data-anchor="section8">
             <div class="slide text-center"
                 style="background: url('https://i.ibb.co/PwGpdS9/1.jpg'); background-repeat: no-repeat; background-size:cover;background-position: center center;">
-                <h1 class="p-2 pe-md-5 me-md-5 text-end mont800 display-3 textshadow text-white">
+                <h1 id="team1" onclick="showDes(`team1`)" class="p-2 pe-md-5 me-md-5 text-center mont800 display-3 textshadow text-white">
                     Bhumika Trivedi
                 </h1>
-                <div class="team">
-                    <p class="p-2 pe-md-5 me-md-5 w-50 textshadow text-white text-end ms-auto">
+                <div id="team1des" onclick="hideDes(`team1`)" class="team visually-hidden">
+                    <p class="p-2 pe-md-5 me-md-5 w-50 text-justify mx-auto textshadow text-white">
                         A traveller in the entertainment world for 18 years, exploring
                         and creating milestones. She embarked on this journey as an RJ,
                         going on to writing and stirring life with her words, she adheres
@@ -185,11 +192,11 @@
             </div>
             <div class="slide text-center"
                 style="background: url('https://i.ibb.co/rGGftnV/6.jpg'); background-repeat: no-repeat; background-size:cover;background-position: center center;">
-                <h1 class="p-2 ps-md-5 ms-md-5 text-start mont800 display-3 textshadow text-white">
+                <h1 id="team2" onclick="showDes(`team2`)" class="p-2 ps-md-5 ms-md-5 mont800 display-3 textshadow text-white">
                     Chirag Vyas
                 </h1>
-                <div class="team">
-                    <p class="p-2 ps-md-5 ms-md-5 w-50 textshadow text-white text-start me-auto">
+                <div id="team2des" onclick="hideDes(`team2`)" class="team visually-hidden">
+                    <p class="p-2 ps-md-5 ms-md-5 w-50 text-justify mx-auto textshadow text-white">
                         With over a total experience of 11 years in various fields of developmental work and 4+ years of
                         work experience with GSCRA Mr. Chirag Vyas heads various project implementations. He also holds
                         proficiency in project analysis and documentation. He has worked under various government
@@ -203,11 +210,11 @@
             </div>
             <div class="slide text-center"
                 style="background: url('https://i.ibb.co/6sjDp90/3.jpg'); background-repeat: no-repeat; background-size:cover;background-position: top center;">
-                <h1 class="p-2 pe-md-5 me-md-5 text-end mont800 display-3 textshadow text-white">
+                <h1 id="team3" onclick="showDes(`team3`)" class="p-2 pe-md-5 me-md-5 text-center mont800 display-3 textshadow text-white">
                     Ishani Hemant
                 </h1>
-                <div class="team">
-                    <p class="p-2 pe-md-5 me-md-5 w-50 textshadow text-white text-end ms-auto">
+                <div id="team3des" onclick="hideDes(`team3`)" class="team visually-hidden">
+                    <p class="p-2 pe-md-5 me-md-5 w-50 text-justify mx-auto textshadow text-white">
                         Ishani is a performing art professional, who has studied Indian
                         Culture and Culture &amp; Arts Management. She has handled
                         national and international projects of varying categories. With
@@ -224,11 +231,11 @@
             </div>
             <div class="slide text-center"
                 style="background: url('https://i.ibb.co/GWy6Hx6/5.jpg'); background-repeat: no-repeat; background-size:cover;background-position: center center;">
-                <h1 class="p-2 pe-md-5 me-md-5 text-end mont800 display-3 textshadow text-white">
+                <h1 id="team6" onclick="showDes(`team6`)" class="p-2 pe-md-5 me-md-5 text-center mont800 display-3 textshadow text-white">
                     Ritesh Sawant
                 </h1>
-                <div class="team">
-                    <p class="p-2 pe-md-5 me-md-5 w-50 textshadow text-white text-end ms-auto">
+                <div id="team6des" onclick="hideDes(`team6`)" class="team visually-hidden">
+                    <p class="p-2 w-50 text-justify mx-auto textshadow text-white">
                         An ever-ready hardworking individual, who also has the knack
                         of working smart.
                         Ritesh, has a strong connection with his Marathi backdrop and
@@ -246,11 +253,11 @@
             </div>
             <div class="slide text-center"
                 style="background: url('https://i.ibb.co/p1nN52R/4.jpg'); background-repeat: no-repeat; background-size:cover;background-position: center center;">
-                <h1 class="p-2 pe-md-5 me-md-5 text-end mont800 display-3 textshadow text-white">
+                <h1 id="team4" onclick="showDes(`team4`)" class="p-2 pe-md-5 me-md-5 text-center mont800 display-3 textshadow text-white">
                     Abhinay Trivedi
                 </h1>
-                <div class="team">
-                    <p class="p-2 pe-md-5 me-md-5 w-50 textshadow text-white text-end ms-auto">
+                <div id="team4des" onclick="hideDes(`team4`)" class="team visually-hidden">
+                    <p class="p-2 pe-md-5 me-md-5 w-50 text-justify mx-auto textshadow text-white">
                         Abhinay breathes literature and lives on stories. Vivid imagination combined with his formal
                         education and experience in journalism has equipped him to transmit various types of stories
                         with absolute ease.
@@ -261,11 +268,11 @@
             </div>
             <div class="slide text-center"
                 style="background: url('https://i.ibb.co/kXwz5Mt/2.jpg'); background-repeat: no-repeat; background-size:cover;background-position: center center;">
-                <h1 class="p-2 pe-md-5 me-md-5 text-end mont800 display-3 textshadow text-white">
+                <h1 id="team5" onclick="showDes(`team5`)" class="p-2 pe-md-5 me-md-5 text-center mont800 display-3 textshadow text-white">
                     Parth Jani
                 </h1>
-                <div class="team">
-                    <p class="p-2 pe-md-5 me-md-5 w-50 textshadow text-white text-end ms-auto">
+                <div id="team5des" onclick="hideDes(`team5`)" class="team visually-hidden">
+                    <p class="p-2 pe-md-5 me-md-5 w-50 text-justify mx-auto textshadow text-white">
                         A superlatively talented young man filled with fervour.
                         Parth has worked with most of the renowned names in the last 8
                         years that he has been in the industry.
