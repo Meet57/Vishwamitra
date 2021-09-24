@@ -127,25 +127,26 @@ span {
 /* background */
 
 .section1 {
-    background: url('https://images.pexels.com/photos/3761163/pexels-photo-3761163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-size: cover;
-    background-position: center center;
-}
-
-.section2 {
     background: url('https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
     background-position: center center;
 }
 
+.section2 {
+    background: url('https://images.pexels.com/photos/4960438/pexels-photo-4960438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
 .section3 {
-    background: url('https://c.wallhere.com/photos/00/56/india_children_asia_babies_pushkar-818114.jpg!d');
+    background: url('https://images.pexels.com/photos/7685715/pexels-photo-7685715.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
     background-position: center center;
 }
 
 .section4 {
-    background: url('https://peoplewhogive.org/wp-content/uploads/2019/11/header100people.jpg');
+    background: url('https://images.pexels.com/photos/7920200/pexels-photo-7920200.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
     background-position: center center;
 }
@@ -174,10 +175,18 @@ span {
     background-position: center center;
 }
 
-.section11 {
-    background: url('https://images.pexels.com/photos/63901/pexels-photo-63901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+.section10 {
+    background: url('../images/Untitled-1.jpg');
     background-size: cover;
     background-position: center center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.section11 {
+    background: url('https://images.pexels.com/photos/1787220/pexels-photo-1787220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
 
 .section12 {
